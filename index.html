@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="counter">
+       <div class="container">
+        <h1 class="counter__title">
+           🐾 Cat Hotel Price Calculator 🐾
+        </h1>
+        <div class="counter__wrapper">
+            <div class="counter-block">
+                <div class="counter-block__option">Amount of cats:</div>
+                <input type="number" min="1" step="1" class="counter-block__input">
+            </div>
+            <div class="counter-block">
+                <div class="counter-block__option">Amount of days:</div>
+                <input type="number" min="1" step="1" class="counter-block__input">
+            </div>
+            <div class="counter-block">
+                <div class="counter-block__option">Choose accomodation type:</div>
+                <select name="place" id="select">
+                    <option id="economy" value="1">Economy</option>
+                    <option id="premium" value="1.5">Premium</option>
+                    <option id="premium-plus" value="1.8">Premium Plus</option>
+                </select>
+            </div>
+            <div class="counter__total">
+                Total price: $
+                <span id="total">234</span>
+            </div>
+        </div>
+
+       </div>
+    </section>
+   
+<script src="js/script.js"></script>
+</body>
+</html>
